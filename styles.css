@@ -1,7 +1,5 @@
 /*Color Palette: #0a0908, #49111c, #f2f4f3, #a9927d, #5e503f */
 
-
-
 /*Menu*/
 .bg-dark {
     background-color: #49111c !important;
@@ -30,6 +28,70 @@ body{
 }
 h1{
     color: #0a0908;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#bread{
+    width: 100%;
+    background-image: url(/images/BreadIcon.jfif);
+    background-size: cover;
+    height: 0;
+    padding: 0; 
+    padding-bottom: calc(100% * 3 / 4);
+}
+#pizza{
+    width: 100%;
+    background-image: url(/images/PizzaIcon.jfif);
+    background-size: cover;
+    height: 0;
+    padding: 0; 
+    padding-bottom: calc(100% * 3 / 4);
+}
+#pasta{
+    width: 100%;
+    background-image: url(/images/PastaIcon.jfif);
+    background-size: cover;
+    height: 0;
+    padding: 0; 
+    padding-bottom: calc(100% * 3 / 4);
+}
+.recipe{
+    border-radius: 25px;
+    background: #a9927d;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #49111c;
+    text-align: center;
+}
+#bottomBanner{
+    display: block;
+    position: relative;
+    border-radius: 25px;
+    background: #a9927d;
+    padding: 40px;
+    width: auto;
+    height: auto;
+    border: 5px solid #49111c;
+}
+
+@media only screen and (min-width: 1024px) {
+    .recipes{
+      column-count: 4;
+    }
+}
+  
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .recipes {
+      column-count: 2;
+    }
+}
+  
+@media only screen and (max-width: 767px) {
+    .recipes {
+      column-count: 1;
+    }
 }
 
 /*Footer*/
@@ -41,4 +103,5 @@ h1{
     right: 0;
     width: 100%;
     border: 3px solid #0a0908;
+    height: 40px;
 }
